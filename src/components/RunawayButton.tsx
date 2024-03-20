@@ -17,6 +17,7 @@ const RunawayButton: React.FC = () => {
 
     return (
         <button
+            tabIndex={-1}
             style={style}
 						onMouseEnter={handleMouseEnter}
 						className="btn btn--red runaway-btn"

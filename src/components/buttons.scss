@@ -85,7 +85,7 @@ body {
 		@for $i from 1 through 4 {
 			&:nth-of-type(#{$i}) {
 				--hueBg: calc(var(--hue) - #{$i * $hueStep});
-				transition-delay: $delayStep / 2 * (4 - $i);
+				transition-delay: calc($delayStep / 2) * (4 - $i);
 			}
 		}
 
@@ -112,6 +112,7 @@ body {
 	&.runaway-btn {
 		margin-top: 0;
 		margin-left: 9em;
+		
 	}
 
 	&.left-btn {
